@@ -25,8 +25,8 @@ export default function Teams() {
             </div>
             <div className="mt-3 space-y-2 text-center">
               <div className="space-y-1 text-lg font-medium leading-6">
-                <h3>Freddy Smith</h3>
-                <p className="text-blue-600">CEO and Founder</p>
+                <h3>August Ehenou</h3>
+                <p className="text-blue-600">CEO & Fondateur</p>
               </div>
               <div className="relative flex items-center justify-center space-x-3">
                 <a href="#_" className="text-gray-300 hover:text-gray-400">
@@ -62,7 +62,7 @@ export default function Teams() {
             <div className="mt-3 space-y-2 text-center">
               <div className="space-y-1 text-lg font-medium leading-6">
                 <h3>Carl Jones</h3>
-                <p className="text-blue-600">CTO and Co-Founder</p>
+                <p className="text-blue-600">CTO & Co-Fondateur</p>
               </div>
               <div className="relative flex items-center justify-center space-x-3">
                 <a href="#_" className="text-gray-300 hover:text-gray-400">

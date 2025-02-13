@@ -26,12 +26,12 @@ export default function Hero() {
         <div className="mt-10 w-44 h-16 flex justify-between items-center">
           <a
             href=""
-            className="rounded-full bg-blue-500 inline-block w-full py-6 px-10 text-center"
+            className="rounded-full bg-blue-500 inline-block w-full py-4 px-10 text-center"
           >
             Contact
           </a>
           <figure className="ml-3">
-            <img src="images/star.svg" alt="" className="h-10 w-10" />
+            <img src="images/star.svg" alt="" className="h-48 w-48" />
           </figure>
         </div>
       </div>
