@@ -17,7 +17,7 @@ export default function TCard({imageLinks}) {
             <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
         </h3>
     </div>
-    <img className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-24 xl:h-24" src={imageLinks} alt="" />
+    {/* <img className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-24 xl:h-24" src={imageLinks} alt="" /> */}
 </blockquote>
   )
 }

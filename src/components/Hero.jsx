@@ -13,11 +13,11 @@ export default function Hero() {
     <motion.header
       id="services"
       className="h-full text-start grid grid-cols-1 md:grid-cols-2 px-2 md:px-0 gap-y-6"
-      initial={{ opacity: 0, x: 100 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{
         opacity: 1,
         transition: { duration: 1, delay: 0.2 },
-        x: 0,
+        y: 0,
       }}
       variants={variants}
     >

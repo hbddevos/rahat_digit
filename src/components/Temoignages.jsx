@@ -34,7 +34,7 @@ export default function Temoignages() {
                 </p>
                 <a href="#_" className="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md shadow hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue md:py-4 md:text-lg md:px-10 uppercase" data-primary="blue-600" data-rounded="rounded-md">Voir nos projets</a>
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className="">
                 <TCard imageLinks="images/test1.png" />
                 <TCard imageLinks="images/test2.png" />
                 <TCard imageLinks="images/test3.png" />

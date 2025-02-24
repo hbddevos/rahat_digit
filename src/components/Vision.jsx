@@ -10,11 +10,11 @@ export default function Vision() {
     <motion.section
       id="vision"
       className="px-2 py-8 bg-white md:px-0"
-      initial={{ opacity: 0, x: '-100%' }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{
         opacity: 1,
         transition: { duration: 1, delay: 0.2 },
-        x: 0,
+        y: 0,
       }}
       variants={variants}
     >
