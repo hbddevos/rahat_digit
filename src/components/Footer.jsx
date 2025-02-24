@@ -1,44 +1,66 @@
+import { motion } from "framer-motion";
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 4 } },
+};
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <motion.footer
+      className="bg-white"
+      initial={{ opacity: 0, y: '100%' }}
+      whileInView={{
+        opacity: 1,
+        transition: { duration: 1, delay: 0.2 },
+        y: 0,
+      }}
+      variants={variants}
+    >
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           <div className="px-5 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
-              About
+              Acceuil
             </a>
           </div>
           <div className="px-5 py-2">
             <a
-              href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              href="#apropos"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
-              Blog
+              Apropos
             </a>
           </div>
           <div className="px-5 py-2">
             <a
-              href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              href="#services"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
-              Team
+              Services
             </a>
           </div>
           <div className="px-5 py-2">
             <a
-              href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              href="#vision"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
-              Pricing
+              Vison
             </a>
           </div>
           <div className="px-5 py-2">
             <a
-              href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              href="#valeurs"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
+            >
+              Valeurs
+            </a>
+          </div>
+          <div className="px-5 py-2">
+            <a
+              href="#contact"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
               Contact
             </a>
@@ -46,14 +68,14 @@ export default function Footer() {
           <div className="px-5 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-blue-500 hover:text-blue-900"
             >
               Terms
             </a>
           </div>
         </nav>
         <div className="flex justify-center mt-8 space-x-6">
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="#" className="text-blue-400 hover:text-blue-500">
             <span className="sr-only">Facebook</span>
             <svg
               className="w-6 h-6"
@@ -68,7 +90,7 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="#" className="text-blue-400 hover:text-blue-500">
             <span className="sr-only">Instagram</span>
             <svg
               className="w-6 h-6"
@@ -83,7 +105,7 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="#" className="text-blue-400 hover:text-blue-500">
             <span className="sr-only">Twitter</span>
             <svg
               className="w-6 h-6"
@@ -95,10 +117,10 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-        <p className="mt-8 text-base leading-6 text-center text-gray-400">
-          &copy; 2021 SomeCompany, Inc. All rights reserved.
+        <p className="mt-8 text-base leading-6 text-center text-blue-400">
+          &copy; 2025 RadaDigit, Tout droit reservé. Developpeur (+228)92407089
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

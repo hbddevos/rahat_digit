@@ -1,7 +1,15 @@
+import { motion } from "framer-motion";
+
+const childrenVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.2 } },
+};
+
 // eslint-disable-next-line react/prop-types
-export default function Service({title, text, image}) {
+export default function Service({ title, text, image }) {
   return (
-    <div
+    <motion.div
+      variants={childrenVariants}
       className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl"
       data-rounded="rounded-xl"
       data-rounded-max="rounded-full"
@@ -27,12 +35,10 @@ export default function Service({title, text, image}) {
           <circle cx="6" cy="14" r="3" />
           <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
         </svg> */}
-        <img src={image} alt="" className="h-6 w-6"/>
+        <img src={image} alt="" className="h-6 w-6" />
       </div>
       <h4 className="text-xl font-medium text-gray-700 capitalize">{title}</h4>
-      <p className="text-base text-center text-gray-600">
-        {text}
-      </p>
-    </div>
+      <p className="text-base text-center text-gray-600">{text}</p>
+    </motion.div>
   );
 }

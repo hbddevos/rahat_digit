@@ -1,8 +1,18 @@
 import Value from "./parts/Value";
+import {motion} from 'framer-motion'
 
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 4 } },
+};
 export default function Values() {
   return (
-    <section id="valeurs" className="py-20 bg-gray-50">
+    <motion.section id="valeurs" className="py-20 bg-gray-50"
+    initial={{ opacity: 0, y: '-100' }}
+      whileInView={{ opacity: 1 , transition: { duration: 1, delay: 0.2 }, y: 0 }}
+      variants={variants}
+    >
       <div className="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
         <div className="flex flex-wrap items-center">
           <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -11,7 +21,7 @@ export default function Values() {
                 Nos Valeurs
               </h2>
               <p className="mb-4 font-medium tracking-tight text-gray-700 xl:mb-6 text-lg md:text-xl">
-                Notre travail s'organise autour de trois valeurs que nous
+                Notre travail s&apos;organise autour de trois valeurs que nous
                 respoectons et qui font notre identité.
               </p>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
@@ -80,6 +90,6 @@ export default function Values() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

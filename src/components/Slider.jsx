@@ -3,10 +3,10 @@ import "./../../src/slick.css";
 import "./../../src/slick-theme.css";
 
 const images = [
-  "./images/afro1.jpg",
-  "./images/afro2.jpg",
-  "./images/afro3.jpg",
-  "./images/afro4.jpg",
+  "./images/hero1.png",
+  "./images/hero2.png",
+  "./images/hero3.png",
+  "./images/hero4.png",
 ];
 
 const AutoCarousel = () => {

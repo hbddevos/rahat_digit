@@ -1,19 +1,33 @@
+import { motion } from "framer-motion";
+
 import { useState } from "react";
 import NavLink from "./parts/NavLink";
+
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 4 } },
+}; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white shadow w-full mb-2 px-2">
+    <motion.nav
+      className="relative bg-white shadow w-full mb-2 px-2"
+      initial={{ opacity: 0, y: '-100' }}
+      whileInView={{
+        opacity: 1,
+        transition: { duration: 1, delay: 0.2 },
+        y: 0,
+      }}
+      id="services"
+      variants={variants}
+    >
       <div className="container mx-auto md:flex">
         <div className="flex items-center justify-between  py-6">
           <a href="#">
-            <img
-              className="w-auto h-6 sm:h-7"
-              src="https://merakiui.com/images/full-logo.svg"
-              alt="RDIGIT"
-            />
+            <img className="w-auto h-12 sm:h-7" src="logo.png" alt="RDIGIT" />
           </a>
 
           {/* Mobile menu button */}
@@ -66,14 +80,12 @@ const Navbar = () => {
           }`}
         >
           <div className="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
-        
             <NavLink text="Accueil" />
             <NavLink text="Apropos" />
             <NavLink text="Services" />
             <NavLink text="Vision" />
             <NavLink text="Valeurs" />
             <NavLink text="Contact" />
-            
           </div>
 
           {/* <div className="relative mt-4 md:mt-0">
@@ -101,7 +113,7 @@ const Navbar = () => {
           </div> */}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

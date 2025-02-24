@@ -1,6 +1,23 @@
+// Code By Webdevtrick ( https://webdevtrick.com )
+import { motion } from "framer-motion";
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 4 } },
+};
+
 export default function Vision() {
   return (
-    <section id="vision" className="px-2 py-8 bg-white md:px-0">
+    <motion.section
+      id="vision"
+      className="px-2 py-8 bg-white md:px-0"
+      initial={{ opacity: 0, x: '-100%' }}
+      whileInView={{
+        opacity: 1,
+        transition: { duration: 1, delay: 0.2 },
+        x: 0,
+      }}
+      variants={variants}
+    >
       <div className="container items-center max-w-7xl px-2 mx-auto">
         <div className="flex flex-wrap items-center gap-y-8 sm:-mx-3">
           <div className="w-full md:w-1/2 md:px-3 order-2">
@@ -10,7 +27,7 @@ export default function Vision() {
                 {/* <span className="block text-indigo-600 xl:inline" data-primary="indigo-600">Tell Your Story!</span> */}
               </h1>
               <p className="mx-auto text-base text-center  text-gray-700 sm:max-w-md lg:text-xl md:max-w-3xl">
-                Notre vision c'est de bâtir une référence en communication
+                Notre vision c&lsquo;est de bâtir une référence en communication
                 digitale.
               </p>
               <div className="relative flex flex-col sm:flex-row sm:space-x-4">
@@ -57,6 +74,6 @@ export default function Vision() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

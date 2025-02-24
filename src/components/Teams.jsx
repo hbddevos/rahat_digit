@@ -1,6 +1,17 @@
+import { motion } from "framer-motion";
+
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 4 } },
+};
 export default function Teams() {
   return (
-    <section className="relative py-20 overflow-hidden bg-white">
+    <motion.section className="relative py-20 overflow-hidden bg-white"
+    initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1 , transition: { duration: 1, delay: 0.2 }, y: 0 }}
+      variants={variants}
+    >
       <span className="absolute top-0 right-0 flex flex-col items-end mt-0 -mr-16 opacity-60">
         <span className="container hidden w-screen h-32 max-w-xs mt-20 transform rounded-full rounded-r-none md:block md:max-w-xs lg:max-w-lg 2xl:max-w-3xl bg-blue-500"></span>
       </span>
@@ -20,7 +31,7 @@ export default function Teams() {
               <div className="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-blue-50"></div>
               <img
                 className="relative z-20 w-full rounded-full"
-                src="https://cdn.devdojo.com/images/june2021/avt-03.jpg"
+                src="images/team1.png"
               />
             </div>
             <div className="mt-3 space-y-2 text-center">
@@ -56,7 +67,7 @@ export default function Teams() {
               <div className="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-green-50"></div>
               <img
                 className="relative z-20 w-full rounded-full"
-                src="https://cdn.devdojo.com/images/june2021/avt-07.jpg"
+                src="images/team2.png"
               />
             </div>
             <div className="mt-3 space-y-2 text-center">
@@ -92,7 +103,7 @@ export default function Teams() {
               <div className="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-pink-50"></div>
               <img
                 className="relative z-20 w-full rounded-full"
-                src="https://cdn.devdojo.com/images/june2021/avt-20.jpg"
+                src="https://cdn.devdojo.com/images/june2021/avt-20.png"
               />
             </div>
             <div className="mt-3 space-y-2 text-center">
@@ -128,7 +139,7 @@ export default function Teams() {
               <div className="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full rounded-tr-none bg-green-50"></div>
               <img
                 className="relative z-20 w-full rounded-full"
-                src="https://cdn.devdojo.com/images/june2021/avt-09.jpg"
+                src="https://cdn.devdojo.com/images/june2021/avt-09.png"
               />
             </div>
             <div className="mt-3 space-y-2 text-center">
@@ -160,6 +171,6 @@ export default function Teams() {
           </div> */}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

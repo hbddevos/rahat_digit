@@ -10,11 +10,15 @@ import Values from "./components/Values";
 import Teams from "./components/Teams";
 import Footer from "./components/Footer";
 import Top from "./components/Top";
+import Contact from "./components/Contact";
+// import Loader from "./components/Loader";
 
 function App() {
   return (
     <>
+    {/* <Loader /> */}
       <Top />
+      
       <Links />
       <Navbar />
       <section className="px-2 max-w-md:px-16 lg:px-32">
@@ -27,7 +31,7 @@ function App() {
         <Services />
         <Temoignages />
         <Teams />
-        <div id="contact" className="text-9xl font-extrabold">Contact</div>
+        <Contact />
         <Footer />
         <section>
           <footer></footer>
