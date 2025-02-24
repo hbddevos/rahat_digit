@@ -3,7 +3,7 @@
 export default function About() {
   return (
     <>
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 px-2 md:px-0">
+      <section id="apropos" className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 px-2 md:px-0">
         <div className="flex flex-col justify-center">
           <div className="flex justify-start items-center mb-5">
             <figure>

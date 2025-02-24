@@ -1,10 +1,10 @@
-import Links from "./Links";
+// import Links from "./Links";
 import AutoCarousel from "./Slider";
 
 export default function Hero() {
   return (
     <header className="h-full text-start grid grid-cols-1 md:grid-cols-2 px-2 md:px-0 gap-y-6">
-      <div className="space-y-8">
+      <div className="space-y-8 flex flex-col justify-center">
         <div className="flex justify-between ">
           <figure>
             <img src="images/star.svg" alt="" className="h-10 w-10" />
@@ -19,14 +19,14 @@ export default function Hero() {
         <h1 className="text-[35.2px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[64px] leading-none font-bold">
           Rahat Digit - Votre Domination Digitale Commence Ici
         </h1>
-        <p className="text-[1.35rem] sm:text-[1.38rem] md:text-[1.42rem] lg:text-[1.46rem] xl:text-[1.5rem]">
+        {/* <p className="text-[1.35rem] sm:text-[1.38rem] md:text-[1.42rem] lg:text-[1.46rem] xl:text-[1.5rem] text-gray-600">
           Notre création est ce qu'il vous faut pour prendre <br /> soins de
           votre cure chevelu et le rendre soyeux
-        </p>
+        </p> */}
         <div className="mt-10 w-44 h-16 flex justify-between items-center">
           <a
             href=""
-            className="rounded-full bg-blue-500 inline-block w-full py-4 px-10 text-center"
+            className="rounded-full bg-blue-500 inline-block w-full text-white font-medium hover:bg-blue-700 transition-all py-4 px-10 text-center"
           >
             Contact
           </a>

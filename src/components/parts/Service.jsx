@@ -30,7 +30,7 @@ export default function Service({title, text, image}) {
         <img src={image} alt="" className="h-6 w-6"/>
       </div>
       <h4 className="text-xl font-medium text-gray-700 capitalize">{title}</h4>
-      <p className="text-base text-center text-gray-500">
+      <p className="text-base text-center text-gray-600">
         {text}
       </p>
     </div>

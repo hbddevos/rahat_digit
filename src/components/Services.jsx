@@ -20,15 +20,15 @@ export default function Services() {
     //   </div>
     // </section>
 
-    <section className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white">
       <div className="container max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold tracking-tight text-center">
+        <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
           Nos services
         </h2>
-        <p className="mt-2 text-lg text-center text-gray-600">
+        <p className="mt-4 text-lg text-gray-700 md:text-xl">
           Voici un catalogue des services que nous vous proposons !
         </p>
-        <div className="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
+        <div className="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0 mt-8">
          <Service image="images/target.svg" title="Stratégie Digitale"text="Analyse de votre marché, définition de vos objectifs, création de plans d'action personnalisés." />
          <Service image="images/branding.svg" title="Branding"text="Développement de votre identité visuelle, création de votre logo, conception de votre charte graphique" />
          <Service image="images/target.svg" title="Gestion des Réseaux Sociaux & Création de Contenu" text="Engagez votre audience et développez votre communauté !" />
