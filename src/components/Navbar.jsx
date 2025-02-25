@@ -25,7 +25,7 @@ const Navbar = () => {
       variants={variants}
     >
       <div className="container mx-auto md:flex">
-        <div className="flex items-center justify-between  py-2">
+        <div className="flex items-center justify-between  py-8">
           <a href="#">
             <img className="w-auto h-12 sm:h-7" src="logo.png" alt="RDIGIT" />
           </a>
